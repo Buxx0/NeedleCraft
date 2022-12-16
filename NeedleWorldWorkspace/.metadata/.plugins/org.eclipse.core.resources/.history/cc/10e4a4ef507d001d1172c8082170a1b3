@@ -1,0 +1,10 @@
+package com.buxx0.needleworld.item;
+
+import net.minecraft.world.item.CreativeModeTab;
+
+public class ModCreativeModeTab {
+	public static final CreativeModeTab NEEDLEWORLD_COMBAT = new CreativeModeTab("needleworld") {
+		
+	};
+
+}

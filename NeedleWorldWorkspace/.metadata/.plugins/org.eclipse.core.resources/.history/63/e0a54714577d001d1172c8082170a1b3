@@ -1,0 +1,8 @@
+{
+	"item.needleworld.iron_needle":"Iron Needle",
+	"item.needleworld.golden_needle":"Golden Needle",
+	"item.needleworld.diamond_needle":"Diamond Needle",
+	"item.needleworld.netherite_needle":"Netherite Needle",
+	
+	"itemGroup.needleworld":"NeedleWorld Combat"
+}

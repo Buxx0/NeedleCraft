@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext"/>
+    <fullyQualifiedTypeName name="net.minecraftforge.common.MinecraftForge"/>
+    <fullyQualifiedTypeName name="net.minecraft.world.item.Item"/>
+    <fullyQualifiedTypeName name="net.minecraft.world.item.Tiers"/>
+    <fullyQualifiedTypeName name="net.minecraft.world.item.CreativeModeTab"/>
+    <fullyQualifiedTypeName name="com.buxx0.needleworld.item.ModItems"/>
+    <fullyQualifiedTypeName name="net.minecraft.world.item.Item.Properties"/>
+    <fullyQualifiedTypeName name="com.buxx0.needleworld.item.ModCreativeModeTab"/>
+    <fullyQualifiedTypeName name="net.minecraft.world.food.FoodProperties.Builder"/>
+    <fullyQualifiedTypeName name="net.minecraft.world.effect.MobEffects"/>
+</qualifiedTypeNameHistroy>

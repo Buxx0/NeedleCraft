@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+	" II",
+	"III",
+	"II "
+	],
+	"key": {
+		"I" : {
+			"item":"minecraft:diamond"
+		}
+	},
+	"result": {
+		"item":"needleworld:diamond_needle"
+	}
+}
