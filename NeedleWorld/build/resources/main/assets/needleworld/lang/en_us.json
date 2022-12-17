@@ -6,6 +6,12 @@
 	"item.needleworld.chewable_needle": "Chewable Needle",
 	"item.needleworld.emerald_needle": "Emerald Needle",
 	"item.needleworld.acid": "Acid",
-	
+	"item.needleworld.testicle_sword": "Testicle Sword",
+	"item.needleworld.frozen_testicle": "Frozen Testicle",
+	"item.needleworld.testicle": "Testicle",
+	"item.needleworld.cooked_testicle": "Cooked Testicle",
+	"block.needleworld.ball_block": "Testicle Block",
+	"block.needleworld.ball_ore": "Testicle Ore",
+	"block.needleworld.deepslate_ball_ore": "Deepslate Testicle Ore",
 	"itemGroup.needleworld":"NeedleWorld"
 }

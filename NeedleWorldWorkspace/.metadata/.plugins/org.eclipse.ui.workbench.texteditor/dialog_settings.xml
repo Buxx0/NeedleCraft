@@ -6,12 +6,15 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="Supplier"/>
+		<item key="selection" value="needleworld"/>
 		<list key="findhistory">
+			<item value="tutorialmod"/>
+			<item value="liquid"/>
 			<item value="supplier"/>
 			<item value="#"/>
 		</list>
 		<list key="replacehistory">
+			<item value="needleworld"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

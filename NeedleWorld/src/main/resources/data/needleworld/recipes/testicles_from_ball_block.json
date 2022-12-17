@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "needleworld:ball_block"
+		}
+	],
+	"result": {
+		"item":"needleworld:testicle",
+		"count": 9
+	}
+}

@@ -22,6 +22,18 @@ public class ModItems {
 	}
 	
 	// ITEM DEFINITIONS
+	
+	public static final RegistryObject<Item> FROZEN_TESTICLE = ITEMS.register("frozen_testicle", 
+			() -> new Item(new Item.Properties()
+					.tab(CreativeModeCombat.NEEDLEWORLD_COMBAT)
+					.stacksTo(64)));
+	
+	public static final RegistryObject<Item> TESTICLE = ITEMS.register("testicle", 
+			() -> new Item(new Item.Properties()
+					.tab(CreativeModeCombat.NEEDLEWORLD_COMBAT)
+					.stacksTo(64)));
+	
+	
 	public static final RegistryObject<Item> IRON_NEEDLE = ITEMS.register("iron_needle", 
 			() -> new SwordItem(Tiers.IRON, 
 					4, 
@@ -58,6 +70,15 @@ public class ModItems {
 					.stacksTo(1)
 					.defaultDurability(2000)));
 	
+	public static final RegistryObject<Item> TESTICLE_SWORD = ITEMS.register("testicle_sword", 
+			() -> new SwordItem(Tiers.NETHERITE, 
+					7, 
+					-2.4f, 
+					new Item.Properties()
+					.tab(CreativeModeCombat.NEEDLEWORLD_COMBAT)
+					.stacksTo(1)
+					.defaultDurability(4000)));
+	
 	public static final RegistryObject<Item> EMERALD_NEEDLE = ITEMS.register("emerald_needle", 
 			() -> new SwordItem(Tiers.DIAMOND, 
 					5, 
@@ -71,6 +92,12 @@ public class ModItems {
 			() -> new Item(new Item.Properties()
 					.tab(CreativeModeCombat.NEEDLEWORLD_CONSUMABLES)
 					.food(Foods.CHEWABLE_NEEDLE)
+					.stacksTo(16)));
+	
+	public static final RegistryObject<Item> COOKED_TESTICLE = ITEMS.register("cooked_testicle", 
+			() -> new Item(new Item.Properties()
+					.tab(CreativeModeCombat.NEEDLEWORLD_CONSUMABLES)
+					.food(Foods.COOKED_TESTICLE)
 					.stacksTo(16)));
 	
 	
@@ -96,6 +123,18 @@ public class ModItems {
 				.fast()
 				.effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 7200, 6, false, false, false), 1f)
 				.effect(() -> new MobEffectInstance(MobEffects.DARKNESS, 7200, 6, false, false, false), 1f)
+				.alwaysEat()
+				.build();
+		
+		public static final FoodProperties COOKED_TESTICLE = new FoodProperties.Builder()
+				.nutrition(20)
+				.saturationMod(10f)
+				.meat()
+				.fast()
+				.effect(() -> new MobEffectInstance(MobEffects.HEALTH_BOOST, 7200, 10, false, false, false), 1f)
+				.effect(() -> new MobEffectInstance(MobEffects.DAMAGE_BOOST, 7200, 4, false, false, false), 1f)
+				.effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 700, 2, false, false, false), 1f)
+				.effect(() -> new MobEffectInstance(MobEffects.INVISIBILITY, 4600, 0, false, false, false), 1f)
 				.alwaysEat()
 				.build();
 		

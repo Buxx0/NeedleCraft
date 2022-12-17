@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "needleworld:ball_ore",
+    "needleworld:ball_block",
+    "needleworld:deepslate_ball_ore"
+  ]
+}

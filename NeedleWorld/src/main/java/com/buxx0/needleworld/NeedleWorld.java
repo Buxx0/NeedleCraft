@@ -1,6 +1,9 @@
 package com.buxx0.needleworld;
 
+import com.buxx0.needleworld.block.ModBlocks;
 import com.buxx0.needleworld.item.ModItems;
+import com.buxx0.needleworld.world.feature.ModConfiguredFeatures;
+import com.buxx0.needleworld.world.feature.ModPlacedFeatures;
 
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -14,6 +17,9 @@ public class NeedleWorld {
 	public NeedleWorld() {
 		IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 		ModItems.register(modEventBus);
+		ModBlocks.register(modEventBus);
+		ModConfiguredFeatures.register(modEventBus);
+		ModPlacedFeatures.register(modEventBus);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 
