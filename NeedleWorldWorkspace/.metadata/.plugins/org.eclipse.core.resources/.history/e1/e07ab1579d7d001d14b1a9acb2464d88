@@ -1,0 +1,15 @@
+package com.buxx0.needleworld.item;
+
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.ItemStack;
+
+public class ModCreativeModeTab {
+	public static final CreativeModeTab NEEDLEWORLD_COMBAT = new CreativeModeTab("needleworld") {
+		@Override
+		public ItemStack makeIcon() {
+			return new ItemStack(ModItems.IRON_NEEDLE.get());
+		}
+		
+	};
+
+}

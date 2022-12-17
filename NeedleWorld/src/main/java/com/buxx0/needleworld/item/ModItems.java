@@ -27,7 +27,7 @@ public class ModItems {
 					4, 
 					-2.0f, 
 					new Item.Properties()
-					.tab(ModCreativeModeTab.NEEDLEWORLD_COMBAT)
+					.tab(CreativeModeCombat.NEEDLEWORLD_COMBAT)
 					.stacksTo(1)
 					.defaultDurability(200)));
 	
@@ -36,7 +36,7 @@ public class ModItems {
 					4, 
 					5f, 
 					new Item.Properties()
-					.tab(ModCreativeModeTab.NEEDLEWORLD_COMBAT)
+					.tab(CreativeModeCombat.NEEDLEWORLD_COMBAT)
 					.stacksTo(1)
 					.defaultDurability(40)));
 	
@@ -45,7 +45,7 @@ public class ModItems {
 					5, 
 					-2.0f, 
 					new Item.Properties()
-					.tab(ModCreativeModeTab.NEEDLEWORLD_COMBAT)
+					.tab(CreativeModeCombat.NEEDLEWORLD_COMBAT)
 					.stacksTo(1)
 					.defaultDurability(1500)));
 	
@@ -54,15 +54,32 @@ public class ModItems {
 					5, 
 					-2.0f, 
 					new Item.Properties()
-					.tab(ModCreativeModeTab.NEEDLEWORLD_COMBAT)
+					.tab(CreativeModeCombat.NEEDLEWORLD_COMBAT)
 					.stacksTo(1)
 					.defaultDurability(2000)));
 	
+	public static final RegistryObject<Item> EMERALD_NEEDLE = ITEMS.register("emerald_needle", 
+			() -> new SwordItem(Tiers.DIAMOND, 
+					5, 
+					0.0f, 
+					new Item.Properties()
+					.tab(CreativeModeCombat.NEEDLEWORLD_COMBAT)
+					.stacksTo(1)
+					.defaultDurability(1700)));
+	
 	public static final RegistryObject<Item> CHEWABLE_NEEDLE = ITEMS.register("chewable_needle", 
 			() -> new Item(new Item.Properties()
-					.tab(ModCreativeModeTab.NEEDLEWORLD_COMBAT)
+					.tab(CreativeModeCombat.NEEDLEWORLD_CONSUMABLES)
 					.food(Foods.CHEWABLE_NEEDLE)
 					.stacksTo(16)));
+	
+	
+	public static final RegistryObject<Item> ACID= ITEMS.register("acid", 
+			() -> new Item(new Item.Properties()
+					.tab(CreativeModeCombat.NEEDLEWORLD_CONSUMABLES)
+					.food(Foods.ACID)
+					.stacksTo(64)));
+	
 
 	public static class Foods {
 		public static final FoodProperties CHEWABLE_NEEDLE = new FoodProperties.Builder()
@@ -70,7 +87,16 @@ public class ModItems {
 				.saturationMod(0.6f)
 				.meat()
 				.fast()
-				.effect(() -> new MobEffectInstance(MobEffects.HARM, 10), 0.2f)
+				.effect(() -> new MobEffectInstance(MobEffects.HARM, 10, 0, false, false, false), 0.2f)
+				.build();
+		
+		public static final FoodProperties ACID = new FoodProperties.Builder()
+				.nutrition(0)
+				.saturationMod(0f)
+				.fast()
+				.effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 7200, 6, false, false, false), 1f)
+				.effect(() -> new MobEffectInstance(MobEffects.DARKNESS, 7200, 6, false, false, false), 1f)
+				.alwaysEat()
 				.build();
 		
 	}

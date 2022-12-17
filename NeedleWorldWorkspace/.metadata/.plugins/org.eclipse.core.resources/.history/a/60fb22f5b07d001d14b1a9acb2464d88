@@ -1,0 +1,18 @@
+{
+	"type": "minecraft:recipe_shapeless",
+	"ingredients": [
+		{
+			"item": "minecraft:brown_mushroom"
+		},
+		{
+			"item": "minecraft:red_mushroom"
+		},
+		{
+			"item": "minecraft:wheat_seeds"
+		}
+	],
+	"result": {
+		"item":"needleworld:acid",
+		"count": 5
+	}
+}

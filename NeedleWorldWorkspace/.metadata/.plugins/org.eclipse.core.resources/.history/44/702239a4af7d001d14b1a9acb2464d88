@@ -1,0 +1,22 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+	"BR",
+	"S"
+	],
+	"key": {
+		"B" : {
+			"item":"minecraft:brown_mushroom"
+		},
+		"B" : {
+			"item":"minecraft:red_mushroom"
+		},
+		"S" : {
+			"item":"minecraft:wheat_seeds"
+		}
+	},
+	"result": {
+		"item":"needleworld:acid",
+		"count":5
+	}
+}
